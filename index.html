@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <script
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">
+        Thank you for choosing our product. Please enter your details to give us
+        your valuable feedback.
+      </p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <div class="input-fields">
+          <label for="name" id="name-label">
+            Name :
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+          </label>
+          <label for="email" id="email-label">
+            Email :
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              id="email"
+              required
+            />
+          </label>
+          <label for="number" id="number-label">
+            Age (optional)
+            <input
+              type="number"
+              placeholder="Enter your number"
+              id="number"
+              min="13"
+              max="1000"
+            />
+          </label>
+        </div>
+
+        <label for="dropdown">Car Model :</label>
+        <select id="dropdown">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="fiat">Fiat</option>
+          <option value="audi">Audi</option>
+        </select>
+        <div class="fieldsets">
+          <fieldset>
+            <legend>Would you recommend our product to a friend?</legend>
+            <input type="radio" name="rdo" id="rdo1" value="c1" checked />
+            <label for="rdo1">Yes</label> <br />
+            <input type="radio" name="rdo" id="rdo2" value="c2" />
+            <label for="rdo2">Maybe</label><br />
+            <input type="radio" name="rdo" id="rdo3" value="c3" />
+            <label for="rdo3">No</label><br />
+          </fieldset>
+          <fieldset>
+            <legend>
+              What would you like to see improved? (Check all that apply)
+            </legend>
+            <br />
+            <input type="checkbox" name="chb" id="chb1" value="VidQ" />
+            <label for="chb1">Video Quality</label><br />
+            <input type="checkbox" name="chb" id="chb2" value="AudQ" />
+            <label for="chb2">Audio Quality</label><br />
+            <input type="checkbox" name="chb" id="chb3" value="HighRes" />
+            <label for="chb3">Higher Resolution</label><br />
+            <input type="checkbox" name="chb" id="chb4" value="HighVol" />
+            <label for="chb4">Higher volume</label><br />
+            <input type="checkbox" name="chb" id="chb5" value="BetterCust" />
+            <label for="chb5">Better Customization Options<br /></label>
+            <input type="checkbox" name="chb" id="chb6" value="BuildQ" />
+            <label for="chb6">Better build quality</label>
+          </fieldset>
+        </div>
+        <label for="fbbox">
+          Any comments or suggestions?
+          <textarea id="fbbox" name="feedback"> </textarea></label
+        ><br />
+        <button id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
